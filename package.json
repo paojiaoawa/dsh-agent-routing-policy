@@ -14,6 +14,12 @@
     "lib/client.js",
     "cordis.patch.yml"
   ],
+  "author": "DeepSeek Harness AI Agent",
+  "contributors": [
+    {
+      "name": "DeepSeek Harness AI Agent"
+    }
+  ],
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
