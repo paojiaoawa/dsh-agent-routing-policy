@@ -1,0 +1,31 @@
+{
+  "name": "dsh-agent-routing-policy",
+  "version": "0.5.1",
+  "description": "Global, user-configurable subagent model-routing policy for DSH with its own Web settings page: the user picks cheap/economy and expensive/high-end models from the registered model providers (plus an on/off switch); the policy is injected into every agent's system prompt from the live settings value.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-api-remotes"
+      ]
+    }
+  },
+  "license": "MIT"
+}
