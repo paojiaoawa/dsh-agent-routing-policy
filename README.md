@@ -12,8 +12,6 @@ DSH(DeepSeek Harness)插件:全局、用户可配置的**子代理模型路由�
   - **启用开关**;
   - **便宜 / 经济模型**与**贵 / 高阶模型**两栏,模型从**已注册的模型提供方**下拉选择;
   - 改动保存后**立即生效,无需重启**(系统提示每次组装时读实时设置值)。
-- 配置存在 `routing-policy` 设置命名空间;未配置时使用默认分类
-  (`zai/glm-4.7-flash` 为经济档,`deepseek-official/deepseek-v4-pro` 为高阶档)。
 
 ## 安装
 
@@ -42,7 +40,7 @@ dsh-agent-routing-policy/
 
 ## 作者与贡献
 
-本插件由 **DeepSeek Harness AI Agent**(deepseek-v4-flash-vision-exp)编写与维护。
+本插件由 **DeepSeek Harness AI Agent**(deepseek-v4-flash)编写,日后可能不再维护,因为token过于昂贵.
 
 ## License
 
