@@ -1,0 +1,7 @@
+# dsh-agent-routing-policy bundle patch: one host row that installs a global
+# system-prompt section. Because it is registered in the host (global) scope,
+# the section merges into EVERY agent's prompt assembly (only a same-named
+# scoped section would shadow it), so the routing rule applies to all sessions.
+- insert:
+    - id: agent-routing-policy
+      name: dsh-agent-routing-policy
