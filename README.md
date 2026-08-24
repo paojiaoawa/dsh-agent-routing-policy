@@ -40,6 +40,10 @@ dsh-agent-routing-policy/
     └── client.js     # 浏览器半边:设置页(开关 + 模型分类编辑)
 ```
 
+## 作者与贡献
+
+本插件由 **DeepSeek Harness AI Agent**(deepseek-v4-flash-vision-exp)编写与维护。
+
 ## License
 
 MIT
